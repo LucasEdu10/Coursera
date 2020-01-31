@@ -1,11 +1,12 @@
 n = int(input('Digite um numero: '))
 
 indo = True
+result = 0
 
 while indo:
-	if n % 10 != 0:
-		result = n + n
-		indo = False
-		print(result)
+	if n > 0:
+		result += n % 10
+		n = int(n/10)
 	else:
-		print(n)
+		indo = False
+print(result)
