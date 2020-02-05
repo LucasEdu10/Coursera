@@ -7,3 +7,6 @@ while i < num:
 		print(p)
 		p +=1
 	i += 1
+
+'''	Receba um número inteiro positivo na entrada e imprima os nn primeiros números ímpares naturais.
+	Para a saída, siga o formato do exemplo abaixo.

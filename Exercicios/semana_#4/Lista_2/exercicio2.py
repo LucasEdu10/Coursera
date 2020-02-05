@@ -1,12 +1,17 @@
-num = int(input('Digite um numero inteiro: '))
+n = int(input('Digite um numero: '))
 
-indo = True
+anterior = n % 10
+n = n // 10
+adj_iguais = False
 
-while indo:
-	if num > 0:
-		num = num % 10
-		print(num)
-		print('tem numeros iguais')
-	else:
-		indo = False
-		print('não tem iguais')
+while n > 0 and not adj_iguais:
+	atual = n % 10
+	if atual == anterior:
+		adj_iguais = True
+	anterior = atual
+	n = n // 10
+
+if adj_iguais:
+	print('sim')
+else:
+	print('não')
