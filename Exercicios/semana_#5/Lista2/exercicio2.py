@@ -4,18 +4,16 @@
 
 # Exemplos de execução no Python Shell
 
-x = int(input('DIGITE O X: '))
-y = int(input('DIGITE O Y: '))
-z = int(input('DIGITE O Z: '))
-
-maior = x
-
 def maximo(x,y,z):
-	if y > maior:
-		maior = y
-	elif z > maior:
-		maior = z
 
-	print(maior)
+	if x > y:
+		local = x
+	else:
+		local = y
+
+	if local > z:
+		return local
+	else:
+		return z
 
 #maximo(x,y,z)		
